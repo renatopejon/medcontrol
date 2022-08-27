@@ -1,0 +1,28 @@
+@import url(header.css);
+@import url(card.css);
+@import url(menu.css);
+
+:root {
+    --font-principal: 'Montserrat', sans-serif;
+    --background: #F6F6F6;
+    --cinza-mais-claro: #ECECEC;
+    --cinza-escuro: #464646;
+    --cinza-claro: #A3A3A3;
+    --laranja: #FFB050;
+    --azul: #4894FF;
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--background);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+body section:last-of-type {
+    margin-bottom: 4rem;
+}
+
+header, section {
+    margin: 0 1rem;
+}

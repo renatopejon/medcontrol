@@ -1,0 +1,152 @@
+.appointment-day {
+    color: var(--cinza-escuro);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: 430px;
+    min-width: 340px;
+}
+
+.appointment-info {
+    padding: 0.8rem 1.1rem;   
+}
+
+.appointment-time {
+    display: block;
+    color: var(--cinza-escuro);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 28rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: 430px;
+    min-width: 340px;
+}
+
+.customer {
+    display: flex;
+    gap: 1rem;
+}
+
+.customer-name {
+    font-weight: 700;
+}
+
+.customer-pic {
+    border-radius: 50%;
+    width: 14%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.customer-info {
+    display: flex;
+    padding: 0.8rem 1.1rem 0 1.1rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.chat-icon {
+    border-radius: 50%;   
+}
+
+.tipo-consulta {
+    font-size: 12px;
+    color: var(--cinza-claro);
+}
+
+.tipo-consulta img {
+    vertical-align: text-bottom;
+    padding-right: 0.5rem;
+}
+
+hr {
+    color: var(--cinza-escuro);
+    opacity: 0.1; 
+    margin: 0; 
+    margin-top: 1rem; 
+}
+
+.link-buttons {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-buttons-address {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.link-video {
+    background-color: var(--laranja);
+    color: #FFF;
+    text-decoration: none;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+}
+
+.link-audio {
+    border: 1px solid var(--cinza-mais-claro);
+    color: var(--cinza-escuro);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+}
+
+.link-address {
+    background-color: var(--azul);
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem 7rem;
+}
+
+@media screen and (min-width: 850px) {
+  
+    .sec {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        max-width: 950px;
+        margin: 0 auto        
+    }
+  
+    .appointment-day {
+        margin: 0 1rem; 
+        margin-bottom: 1rem;
+        max-width: 430px;
+        min-width: 340px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .sec {
+        grid-template-columns: 33% 33% 33%;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,62 @@
+.menu {
+    width: 100%;
+    height: 58px;
+    border-radius: 12px 12px 0 0;
+    background: #FFF;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: -58px;
+    margin: 0;
+}
+
+.nav {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cinza-claro);
+    font-size: 12px;
+}
+
+.menu-button:first-child {
+    color: var(--azul);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.consultas-icon {
+    background-image: url(/img/Calendarioicone.svg);
+}
+
+.clientes-icon {
+    background-image: url(/img/clientes-icone.svg);
+    opacity: 30%;
+}
+
+.relatorios-icon {
+    background-image: url(/img/relatorios-icone.svg);
+    opacity: 30%;
+}
+
+.menu-icon {
+    background-image: url(/img/menu-icone.svg);
+    opacity: 30%;
+}
