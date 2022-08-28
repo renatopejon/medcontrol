@@ -30,6 +30,7 @@ input {
     border: none;
     cursor: pointer;
     position: fixed;
+    opacity: 0.8;
     bottom: 23px;
     right: 28px;
     width: 200px;
@@ -98,6 +99,7 @@ input {
     padding: 10px;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
@@ -110,15 +112,9 @@ input {
 }
   
   /* Add some hover effects to buttons */
-.form-container .btn:hover {
+.form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
-
-.open-button:hover, .open-button:focus, .open-button:active {
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
 
 label {
     color: #898989;
