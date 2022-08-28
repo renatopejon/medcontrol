@@ -35,6 +35,7 @@ input {
     right: 28px;
     width: 200px;
     border-radius: 8px;
+    display: none;
 }
   
   /* The popup form - hidden by default */
