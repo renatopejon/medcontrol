@@ -1,0 +1,171 @@
+/* form {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 6px;
+    font-size: 12px;
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    padding: 0.5rem;
+}
+
+form span {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin: 0.5rem 0;
+} */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    background-color: var(--azul);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 200px;
+    border-radius: 8px;
+}
+  
+  /* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+  
+  /* Add styles to the form container */
+.form-container {
+    width: 300px;
+    max-width: 600px;
+    padding: 10px;
+    border: none;
+    background-color: #F3F3F3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+  
+  /* Full-width input fields */
+.form-container input[type=text], 
+.form-container input[type=datetime-local], 
+.form-container input[type=radio],
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 3px 0 10px 0;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.form-container input[type=radio] {
+    width: 1.5rem;
+    padding: 0;
+    margin: 0.5rem 0 1rem 0;
+    
+}
+  
+  /* When the inputs get focus, do something */
+
+.form-container textarea:focus,
+.form-container input[type=datetime-local]:focus, 
+.form-container input[type=radio]:focus,
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #fff;
+    border: 1px solid var(--azul);
+    outline: none;
+}
+  
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    font-family: var(--font-principal);
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: var(--azul);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+  
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+.open-button:hover, .open-button:focus, .open-button:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+label {
+    color: #898989;
+    display: block;
+    margin: 8px 0;
+}
+
+.btn-container {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+input::placeholder {
+    font-family: var(--font-principal);
+    color: #CFCFCF;
+}
+
+.form-container span {
+    color: #898989;
+}
+
+.form-container hr {
+    color: #898989;
+    margin: 1rem 0;
+}
+
+.erro {
+    color: #F24A4A;
+    font-size: 12px;
+    display: none;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    margin-right: 0.6rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-symbols-outlined:hover {
+    color: var(--azul);
+}

@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(card.css);
 @import url(menu.css);
+@import url(form.css);
 
 :root {
     --font-principal: 'Montserrat', sans-serif;
@@ -25,4 +26,5 @@ body section:last-of-type {
 
 header, section {
     margin: 0 1rem;
+    max-width: 1365px;
 }

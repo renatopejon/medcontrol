@@ -50,12 +50,12 @@
 .customer-pic {
     border-radius: 50%;
     width: 14%;
-    height: 100%;
     object-fit: contain;
 }
 
 .customer-info {
     display: flex;
+    justify-content: space-between;
     padding: 0.8rem 1.1rem 0 1.1rem;
 }
 
@@ -80,7 +80,7 @@
     padding-right: 0.5rem;
 }
 
-hr {
+.card-container hr {
     color: var(--cinza-escuro);
     opacity: 0.1; 
     margin: 0; 
@@ -132,7 +132,7 @@ hr {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         max-width: 950px;
-        margin: 0 auto        
+        margin: 0 auto;     
     }
   
     .appointment-day {
@@ -141,12 +141,20 @@ hr {
         max-width: 430px;
         min-width: 340px;
     }
-
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1365px) {
     .sec {
         grid-template-columns: 33% 33% 33%;
-        gap: 3rem;
+        gap: 5rem;
+    }
+
+    .fixed-action-btn {
+        display: none;
+    }
+
+    .card-container {
+        max-width: 450px;
+        min-width: 375px;
     }
 }

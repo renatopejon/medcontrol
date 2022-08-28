@@ -63,7 +63,13 @@
     opacity: 30%;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 850px) {
+    .nav ul {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1365px) {
     .menu {
         top: 0;
         height: 100%;
@@ -82,15 +88,17 @@
     }
 
     .menu-button {
-        padding: 1rem 0;
+        width: 95%;
+        justify-content: flex-start;
+        padding: 1.5rem 0;
         flex-direction: row;
         font-size: 16px;
     }
 
     .menu-button:hover {
-        width: 100%;
         background-color: rgba(0, 0, 0, 0.014);
-        cursor: pointer;        
+        cursor: pointer;
+        transform: scale(1.1);        
     }
 
     .icon {
