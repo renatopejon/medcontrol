@@ -165,3 +165,15 @@ input::placeholder {
 .material-symbols-outlined:hover {
     color: var(--azul);
 }
+
+@media screen and (min-width: 850px) {
+    .open-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .open-button {
+        display: block;
+    }
+}
